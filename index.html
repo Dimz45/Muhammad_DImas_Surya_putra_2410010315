@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>FitBot</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="chat-container">
+
+    <div class="header">
+        🤖 FitBot - Pelatih Kebugaran
+    </div>
+
+    <div id="chat-box">
+
+    </div>
+
+    <div class="input-area">
+
+        <input
+            type="text"
+            id="user-input"
+            placeholder="Ketik pesan..."
+        >
+
+        <button onclick="location.reload()">
+        🔄 Konsultasi Baru
+        </button>
+
+        <button onclick="sendMessage()">
+            Kirim
+        </button>
+
+    </div>
+
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
